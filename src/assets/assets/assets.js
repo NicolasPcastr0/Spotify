@@ -42,6 +42,10 @@ import song1 from  './song1.mp3'
 import song2 from  './song2.mp3'
 import song3 from  './song3.mp3'
 import maria from './maria.jpg'
+import matecaTeto from './matecaTeto.jpg'
+import teto from './teto.jpg'
+import uber from './uber.jpg'
+import tempo from './tempo.jpg'
 
 export const assets = {
     bell_icon,
@@ -126,42 +130,42 @@ export const songsData = [
     },
     {
         id:1,
-        name: "Song Two",
-        image: img2,
+        name: "Balazul",
+        image: matecaTeto,
         file:song2,
-        desc:"Put a smile on your face with these happy tunes",
-        duration:"2:20"
+        desc:"Mateca, Teto",
+        duration:"3:23"
     },
     {
         id:2,
-        name: "Song Three",
-        image: img3,
+        name: "Tava Bom",
+        image: matecaTeto,
         file:song3,
-        desc:"Put a smile on your face with these happy tunes",
-        duration:"2:32"
+        desc:"Mateca, Teto",
+        duration:"3:46"
     },
     {
         id:3,
-        name: "Song Four",
-        image: img4,
+        name: "Uber",
+        image: uber,
         file:song1,
-        desc:"Put a smile on your face with these happy tunes",
-        duration:"2:50"
+        desc:"Ryu, The Runner, Mateca, Trap Select",
+        duration:"2:37"
     },
     {
         id:4,
-        name: "Song Five",
-        image: img5,
+        name: "Previsão do Tempo",
+        image: tempo,
         file:song2,
-        desc:"Put a smile on your face with these happy tunes",
-        duration:"3:10"
+        desc:"Mateca",
+        duration:"3:03"
     },
     {
         id:5,
-        name: "Song Six",
-        image: img14    ,
+        name: "YES OR NO",
+        image: teto,
         file:song3,
-        desc:"Put a smile on your face with these happy tunes",
+        desc:"Teto",
         duration:"2:45"
     },
     {
