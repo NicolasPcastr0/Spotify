@@ -41,6 +41,7 @@ import img16 from './img16.jpg'
 import song1 from  './song1.mp3'
 import song2 from  './song2.mp3'
 import song3 from  './song3.mp3'
+import maria from './maria.jpg'
 
 export const assets = {
     bell_icon,
@@ -117,11 +118,11 @@ export const albumsData = [
 export const songsData = [
     {
         id:0,
-        name: "Song One",
-        image: img1,
+        name: "Maria e Juana",
+        image: maria,
         file:song1,
-        desc:"Put a smile on your face with these happy tunes",
-        duration:"3:00"
+        desc:"Mateca",
+        duration:"3:20"
     },
     {
         id:1,

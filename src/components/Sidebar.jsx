@@ -27,10 +27,12 @@ const Sidebar = () => {
           </div>
           <div className="p-4 bg-[#242424] m-2 rounded font-semibold flex flex-col items-start justify-start gap-3 pl-4">
             <h1>Crie sua Playlist</h1>
+            <p className="font-light">Adicione suas músicas favoritas a uma nova playlist.</p>
             <button className="bg-[#1DB954] text-white py-1.5 px-4 rounded-full cursor-pointer">Clique aqui</button>
           </div>
           <div className="p-4 bg-[#242424] m-2 rounded font-semibold flex flex-col items-start justify-start gap-3 pl-4 mt-4">
             <h1>Ache podcasts do seu interesse</h1>
+            <p className="font-light">Descubra novos podcasts e siga os seus favoritos.</p>
             <button className="bg-[#1DB954] text-white py-1.5 px-4 rounded-full cursor-pointer">Pesquisar podcast</button>
           </div>
         </div>
