@@ -46,6 +46,11 @@ import matecaTeto from './matecaTeto.jpg'
 import teto from './teto.jpg'
 import uber from './uber.jpg'
 import tempo from './tempo.jpg'
+import brasil from './brasil.jpg'
+import seujorge from './seujorge.jpg'
+import pop from './pop.jpg'
+import daily from './daily.jpg'
+import liked from './liked.jpg' 
 
 export const assets = {
     bell_icon,
@@ -79,42 +84,42 @@ export const albumsData = [
         id:0,
         name: "Top 50 Global",
         image: img8,
-        desc:"Your weekly update of the most played tracks",
+        desc:"Mundo: seu relatório das faixas mais tocadas",
         bgColor:"#2a4365"
     },
     {   
         id:1,
-        name: "Top 50 India",
-        image: img9,
-        desc:"Your weekly update of the most played tracks",
+        name: "Top 50 Brasil",
+        image: brasil,
+        desc:"Brasil: seu relatório das faixas mais tocadas",
         bgColor:"#22543d"
     },
     {   
         id:2,
-        name: "Trending India",
-        image: img10,
-        desc:"Your weekly update of the most played tracks",
+        name: "This is Seu Jorge",
+        image: seujorge,
+        desc:"This is Seu Jorge. Os maiores hits do artista.",
         bgColor:"#742a2a"
     },
     {   
         id:3,
-        name: "Trending Global",
-        image: img16,
-        desc:"Your weekly update of the most played tracks",
+        name: "Suas músicas mais ouvidas",	
+        image: daily,
+        desc:"",
         bgColor:"#44337a"
     },
     {   
         id:4,
-        name: "Mega Hits,",
-        image: img11,
-        desc:"Your weekly update of the most played tracks",
+        name: "Night Pop",
+        image: pop,
+        desc:"",
         bgColor:"#234e52"
     },
     {   
         id:5,
-        name: "Happy Favorites",
-        image: img15,
-        desc:"Your weekly update of the most played tracks",
+        name: "Músicas Curtidas",
+        image: liked,
+        desc:"",
         bgColor:"#744210"
     }
 ]
