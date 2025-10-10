@@ -1,30 +1,39 @@
-import React from "react";
-import { assets, songsData } from "../assets/assets/assets";
+import React, { useContext } from "react";
+import { assets } from "../assets/assets/assets";
+import PlayerContext from "../context/PlayerContext";
 
 const Player = () => {
+
+  const {track, seekBg, seekBar, playStatus, play, pause} = useContext(PlayerContext);
+
+
   return (
     <div className="h-[10%] bg-[#000000] flex items-center justify-between text-white px-4">
       <div className="hidden lg:flex items-center gap-4">
-        <img className="w-12" src={songsData[0].image} alt="" />
+        <img className="w-12" src={track.image} alt="" />
         <div className="flex flex-col">
-          <h2 className="font-bold">{songsData[0].name}</h2>
-          <p className="text-sm">{songsData[0].desc}</p>
+          <h2 className="font-bold">{track.name}</h2>
+          <p className="text-sm">{track.desc}</p>
         </div>
       </div>
       <div className="flex items-center flex-col gap-1 m-auto">
         <div className="flex gap-4">
             <img className="w-4 cursor-pointer" src={assets.shuffle_icon} alt="" />
             <img className="w-4 cursor-pointer" src={assets.prev_icon} alt="" />
-            <img className="w-4 cursor-pointer" src={assets.play_icon} alt="" />
+            {playStatus ? (
+              <img onClick={pause} className="w-4 cursor-pointer" src={assets.pause_icon} alt="" />
+            ) : (
+              <img onClick={play} className="w-4 cursor-pointer" src={assets.play_icon} alt="" />
+            )}
             <img className="w-4 cursor-pointer" src={assets.next_icon} alt="" />
             <img className="w-4 cursor-pointer" src={assets.loop_icon} alt="" />
         </div>
         <div className="flex items-center gap-5 text-sm text-gray-400">
             <p> 0:00 </p>
-            <div className="w-[60vw] max-w-[500px] bg-gray-300 rounded-full cursor-pointer">
-                <hr className="h-1 border-none w-0 bg-green-800 rounded-full" />
+            <div ref={seekBg} className="w-[60vw] max-w-[500px] bg-gray-300 rounded-full cursor-pointer">
+                <hr ref={seekBar} className="h-1 border-none w-0 bg-green-800 rounded-full" />
             </div>
-            <p className="text-sm">{songsData[0].duration}</p>
+            <p className="text-sm">{track.duration}</p>
         </div>
       </div>
       <div className="hidden lg:flex items-center gap-2 opacity-75">
