@@ -9,13 +9,17 @@ const Player = () => {
 
   return (
     <div className="h-[10%] bg-[#000000] flex items-center justify-between text-white px-4">
-      <div className="hidden lg:flex items-center gap-4">
+      
+      {/* 1. Adicionado w-64 para largura fixa e min-w-64 para garantir a largura mínima */}
+      <div className="hidden lg:flex items-center gap-4 w-64 min-w-64">
         <img className="w-12" src={track.image} alt="" />
         <div className="flex flex-col">
-          <h2 className="font-bold">{track.name}</h2>
-          <p className="text-sm">{track.desc}</p>
+          {/* 2. Adicionado 'truncate' para cortar o texto se for muito longo */}
+          <h2 className="font-bold truncate">{track.name}</h2>
+          <p className="text-sm truncate">{track.desc}</p>
         </div>
       </div>
+
       <div className="flex items-center flex-col gap-1 m-auto">
         <div className="flex gap-4">
             <img className="w-4 cursor-pointer" src={assets.shuffle_icon} alt="" />
@@ -36,6 +40,7 @@ const Player = () => {
             <p>{time.totalTime.minute}:{time.totalTime.second}</p>
         </div>
       </div>
+      
       <div className="hidden lg:flex items-center gap-2 opacity-75">
         <img className="w-4 cursor-pointer" src={assets.plays_icon} alt="" />
         <img className="w-4 cursor-pointer" src={assets.mic_icon} alt="" />
@@ -47,6 +52,7 @@ const Player = () => {
         <img className="w-4 cursor-pointer" src={assets.mini_player_icon} alt="" />
         <img className="w-4 cursor-pointer" src={assets.zoom_icon} alt="" />
       </div>
+
     </div>
   );
 };
